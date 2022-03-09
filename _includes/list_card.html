@@ -1,0 +1,12 @@
+<div class="col">
+  <div class="card shadow-sm">
+    <img class="card-img-top img-cover" alt="thumbnail" src="img/{{carving.images[0]}}"/>
+    <div class="card-body">
+      <p class="card-text">{{carving.dimensions}}</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="{{carving.url}}" class="btn btn-sm btn-outline-secondary">View</a>
+        {% include available_badge.html available=carving.available %}
+      </div>
+    </div>
+  </div>
+</div>
