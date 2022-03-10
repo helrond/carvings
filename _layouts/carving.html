@@ -14,7 +14,7 @@ title: Carving
     <h2 class="mt-3">Details</h2>
     <dl class="row">
       {% if page.dimensions %}
-      <dt class="col-sm-3">Dimensions</dt>
+      <dt class="col-sm-3">Dimensions (h x w x d)</dt>
       <dd class="col-sm-9">{{page.dimensions}}</dd>
       {% endif %}
 
@@ -24,12 +24,12 @@ title: Carving
       {% endif %}
 
       {% if page.date_created %}
-      <dt class="col-sm-3">Date</dt>
+      <dt class="col-sm-3">Date Created</dt>
       <dd class="col-sm-9">{{page.date_created}}</dd>
       {% endif %}
 
       {% if page.locations %}
-      <dt class="col-sm-3">Locations</dt>
+      <dt class="col-sm-3">Created At</dt>
       <dd class="col-sm-9">{% for location in page.locations %}{{location}}<br/>{% endfor %}</dd>
       {% endif %}
 
