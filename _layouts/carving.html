@@ -14,8 +14,8 @@ title: Carving
     <h2 class="mt-3">Details</h2>
     <dl class="row">
       {% if page.dimensions %}
-      <dt class="col-sm-3">Dimensions (h x w x d)</dt>
-      <dd class="col-sm-9">{{page.dimensions}}</dd>
+      <dt class="col-sm-3">Dimensions (inches)</dt>
+      <dd class="col-sm-9">{{page.dimensions.height}}" high x {{page.dimensions.width}}" wide x {{page.dimensions.depth}}" deep</dd>
       {% endif %}
 
       {% if page.material %}
