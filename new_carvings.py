@@ -10,7 +10,7 @@ def main(total):
         page_id = uuid.uuid4()
         # TODO: absolute path based on file
         with open(pathlib.Path(__file__).parent.resolve() / "_carvings" / f"{page_id}.md", "w") as cf:
-            cf.write("---\navailable: \ncontext: \ndate_created: \ndimensions: \nimages: \nlocations: \nmaterial: \n---")
+            cf.write("---\navailable: true\ncontext: \ndate_created: \ndimensions: \n  height: \n  width: \n  depth: \nimages: \n  - \nlocations: \n  - Marble Hill, Bronx, NY\nmaterial: \n---")
 
 
 parser = argparse.ArgumentParser(description='Add datafiles for carvings.')
